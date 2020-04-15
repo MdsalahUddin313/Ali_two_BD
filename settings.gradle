@@ -1,0 +1,2 @@
+rootProject.name='Ali_two_BD'
+include ':app'
