@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:theme="@style/AppTheme_NoACTION"
     tools:context=".BottomNevigation_view">
-
     <FrameLayout
+        android:layout_below="@+id/one_id"
         android:id="@+id/fragment_id"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"></FrameLayout>

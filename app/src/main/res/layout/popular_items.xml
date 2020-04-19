@@ -11,6 +11,8 @@
         android:id="@+id/p_layout_one_id"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="5dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content">
 
@@ -19,22 +21,17 @@
             android:layout_height="wrap_content"
             android:id="@+id/p_cardview_one_id"
             android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
             android:orientation="vertical"
             >
             <ImageButton
                 android:id="@+id/p_button_one_id"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:background="@drawable/ic_account_24dp"
+                android:background="@drawable/beauty"
                 >
+
             </ImageButton>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Catagories"
-                android:gravity="center_horizontal">
-            </TextView>
         </LinearLayout>
 
 
@@ -42,7 +39,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/p_cardview_two_id"
-            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="15dp"
             android:layout_toRightOf="@+id/p_cardview_one_id"
             android:orientation="vertical"
             >
@@ -50,16 +48,11 @@
                 android:id="@+id/p_button_two_id"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:background="@drawable/ic_account_24dp"
+                android:background="@drawable/travel"
                 >
             </ImageButton>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Catagories"
-                android:gravity="center_horizontal">
-            </TextView>
+
+
         </LinearLayout>
 
 
@@ -68,6 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:orientation="vertical"
+            android:layout_marginRight="15dp"
             android:id="@+id/p_cardview_three_id"
             android:layout_toRightOf="@+id/p_cardview_two_id"
             >
@@ -75,16 +69,9 @@
                 android:id="@+id/p_button_three_id"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:background="@drawable/ic_account_24dp"
+                android:background="@drawable/toys"
                 >
             </ImageButton>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Catagories"
-                android:gravity="center_horizontal">
-            </TextView>
         </LinearLayout>
 
 
@@ -94,58 +81,27 @@
             android:orientation="vertical"
             android:layout_marginLeft="10dp"
             android:id="@+id/p_cardview_four_id"
+            android:layout_marginRight="15dp"
             android:layout_toRightOf="@+id/p_cardview_three_id"
             >
             <ImageButton
                 android:id="@+id/p_button_four_id"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:background="@drawable/ic_account_24dp"
+                android:background="@drawable/technology"
                 >
             </ImageButton>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Catagories"
-                android:gravity="center_horizontal">
-            </TextView>
         </LinearLayout>
 
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/p_cardview_five_id"
-            android:layout_marginRight="5dp"
-            android:layout_toRightOf="@+id/p_cardview_four_id"
-            >
-            <ImageButton
-                android:id="@+id/p_button_five_id"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:background="@drawable/ic_account_24dp"
-                >
-            </ImageButton>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Catagories"
-                android:gravity="center_horizontal">
-            </TextView>
-        </LinearLayout>
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:id="@+id/p_layout_two_id"
         android:layout_below="@+id/p_layout_one_id"
-        android:layout_marginLeft="10dp"
         android:layout_marginRight="5dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
         android:layout_height="wrap_content">
 
         <LinearLayout
@@ -153,22 +109,16 @@
             android:layout_height="wrap_content"
             android:id="@+id/p_cardview_six_id"
             android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
             android:orientation="vertical"
             >
             <ImageButton
                 android:id="@+id/p_button_six_id"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:background="@drawable/ic_account_24dp"
+                android:background="@drawable/fashion"
                 >
             </ImageButton>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Catagories"
-                android:gravity="center_horizontal">
-            </TextView>
         </LinearLayout>
 
 
@@ -179,21 +129,15 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/p_cardview_six_id"
             android:orientation="vertical"
+            android:layout_marginRight="15dp"
             >
             <ImageButton
                 android:id="@+id/p_button_seven_id"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:background="@drawable/ic_account_24dp"
+                android:background="@drawable/watch"
                 >
             </ImageButton>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Catagories"
-                android:gravity="center_horizontal">
-            </TextView>
         </LinearLayout>
 
 
@@ -204,21 +148,15 @@
             android:orientation="vertical"
             android:id="@+id/p_cardview_eight_id"
             android:layout_toRightOf="@+id/p_cardview_seven_id"
+            android:layout_marginRight="15dp"
             >
             <ImageButton
                 android:id="@+id/p_button_eight_id"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:background="@drawable/ic_account_24dp"
+                android:background="@drawable/bags"
                 >
             </ImageButton>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Catagories"
-                android:gravity="center_horizontal">
-            </TextView>
         </LinearLayout>
 
 
@@ -229,47 +167,15 @@
             android:layout_marginLeft="10dp"
             android:id="@+id/p_cardview_nine_id"
             android:layout_toRightOf="@+id/p_cardview_eight_id"
+            android:layout_marginRight="15dp"
             >
             <ImageButton
                 android:id="@+id/p_button_nine_id"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:background="@drawable/ic_account_24dp"
+                android:background="@drawable/hdphone"
                 >
             </ImageButton>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Catagories"
-                android:gravity="center_horizontal">
-            </TextView>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/p_cardview_ten_id"
-            android:layout_marginRight="5dp"
-            android:layout_toRightOf="@+id/p_cardview_nine_id"
-            >
-            <ImageButton
-                android:id="@+id/p_button_ten_id"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:background="@drawable/ic_account_24dp"
-                >
-            </ImageButton>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Catagories"
-                android:gravity="center_horizontal">
-            </TextView>
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

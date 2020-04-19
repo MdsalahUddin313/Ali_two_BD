@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/account_list_item_image_id"
+        ></ImageView>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="HEllo"
+        android:textSize="16dp"
+        android:layout_marginLeft="19dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/account_list_item_image_id"
+        android:id="@+id/account_list_item_text_id"
+        ></TextView>
+
+</RelativeLayout>

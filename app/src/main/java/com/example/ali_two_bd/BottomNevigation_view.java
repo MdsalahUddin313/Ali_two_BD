@@ -1,6 +1,8 @@
 package com.example.ali_two_bd;
 
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -8,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.widget.Toolbar;
 
 import com.example.ali_two_bd.Fragments.Account;
 import com.example.ali_two_bd.Fragments.Cart;
@@ -17,12 +20,12 @@ import com.example.ali_two_bd.Fragments.store;
 
 public class BottomNevigation_view extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
+    private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_nevigation_view);
-
-
         Fragment fragment = null;
         final FragmentManager fm = getSupportFragmentManager();
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_nevigation_view_id);

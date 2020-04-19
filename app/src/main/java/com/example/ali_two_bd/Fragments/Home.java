@@ -1,15 +1,19 @@
 package com.example.ali_two_bd.Fragments;
 
+import android.app.ActionBar;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.WindowDecorActionBar;
+import android.support.v7.widget.ActionBarOverlayLayout;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -35,7 +39,10 @@ public class Home extends Fragment {
     private Timer timer;
     final private long DELAY=1000;
     final private long PERIOD_TIME=1000;
+    private  Toolbar toolbar;
+    private Object ActionBar;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -45,30 +52,32 @@ public class Home extends Fragment {
   //      viewGroup.setActivated(true);
         Statusbar_color_change();
 
-
+       //toolbar=viewGroup.findViewById(R.id.home_toolbar_id);
+        //getActivity().getSupportActionBar(toolbar).setTitle();
 
         banner_Slider_viewpager=viewGroup.findViewById(R.id.view_pager_id);
         sliderModelList=new ArrayList<SliderModel>();
 
-        sliderModelList.add(new SliderModel(R.drawable.ic_store_24dp));
-        sliderModelList.add(new SliderModel(R.drawable.images));
-        //our main array
-        sliderModelList.add(new SliderModel(R.drawable.ic_account_24dp));
-        sliderModelList.add(new SliderModel(R.drawable.ic_bell_24dp));
-        sliderModelList.add(new SliderModel(R.drawable.ic_cart_24dp));
-        sliderModelList.add(new SliderModel(R.drawable.ic_home_24dp));
-        sliderModelList.add(new SliderModel(R.drawable.ic_products_24dp));
-        sliderModelList.add(new SliderModel(R.drawable.ic_store_24dp));
-        sliderModelList.add(new SliderModel(R.drawable.images));
+        sliderModelList.add(new SliderModel(R.drawable.advertise_banner_three));
+        sliderModelList.add(new SliderModel(R.drawable.advertise_banner_four));
 
-        sliderModelList.add(new SliderModel(R.drawable.ic_account_24dp));
-        sliderModelList.add(new SliderModel(R.drawable.ic_bell_24dp));
+        //our main array
+        sliderModelList.add(new SliderModel(R.drawable.advertise_banner_one));
+        sliderModelList.add(new SliderModel(R.drawable.advertise_banner_two));
+        sliderModelList.add(new SliderModel(R.drawable.advertise_banner_three));
+        sliderModelList.add(new SliderModel(R.drawable.advertise_banner_four));
+
+
+        sliderModelList.add(new SliderModel(R.drawable.advertise_banner_one));
+        sliderModelList.add(new SliderModel(R.drawable.advertise_banner_two));
+
+
 
         ///setting our Adapters
         SliderAdapter sliderAdapter=new SliderAdapter(sliderModelList);
         banner_Slider_viewpager.setAdapter(sliderAdapter);
         banner_Slider_viewpager.setClipToPadding(false);
-        banner_Slider_viewpager.setPageMargin(20);
+        banner_Slider_viewpager.setPageMargin(60);
         banner_Slider_viewpager.setCurrentItem(currentpage);
         //changin your view pager according to your direction
         //whenever we change our atributes it control our page's color or view
